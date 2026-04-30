@@ -1,19 +1,32 @@
 package q01_basic.question07;
 
+import java.io.IOException;
+
 public class SystemMain07 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		NumberList numberList = new NumberList();
 		System.out.println("1-任意の整数をListに代入します");
 		System.out.print("input number>>");
 		int limit = 0;
 		//TODO ここから実装する
+		ConsoleReader consoleReader = new ConsoleReader();
+		try {
+			consoleReader.inputNumber();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		}
 
 		System.out.println("****************");
 		System.out.println("Listの合計を計算します");
 		int sum = 0;
 		//TODO ここから実装する
+		numberList.addFromOneTo(limit);
+		numberList.getNumbers();
+		System.out.println();
 
 		System.out.println("1から" + limit + "までの合計は" + sum + "です。");
 
