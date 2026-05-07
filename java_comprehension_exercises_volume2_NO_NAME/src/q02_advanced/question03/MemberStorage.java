@@ -11,7 +11,7 @@ class MemberStorage {
 	 * @param members
 	 */
 	public MemberStorage() {
-		this.members = new ArrayList<>();
+		this.members = new ArrayList<Member>();
 		members.add(Member.getInstance(1, "Passw0rd", "Miura Manabu", 28, 2));
 		members.add(Member.getInstance(2, "aaaaAAAA", "Sato Kensuke", 53, 1));
 		members.add(Member.getInstance(3, "xxxxXXXX", "Goto Aya", 20, 3));

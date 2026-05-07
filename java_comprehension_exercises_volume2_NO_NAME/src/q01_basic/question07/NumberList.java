@@ -36,7 +36,7 @@ class NumberList {
 		Integer sum = 0;
 		//TODO ここから実装する
 		for (Integer integer : numbers) {
-			sum += numbers.get(integer);
+			sum += integer;
 		}
 		return sum;
 	}
@@ -61,7 +61,7 @@ class NumberList {
 		//TODO ここから実装する
 		int removePoint = numbers.size() / 2;
 		for (int i = 0; i < removePoint; i++) {
-			numbers.remove(i);
+			numbers.remove(0);
 		}
 	}
 

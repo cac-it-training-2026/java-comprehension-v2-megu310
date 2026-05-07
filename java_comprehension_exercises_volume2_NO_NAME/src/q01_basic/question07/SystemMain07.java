@@ -13,7 +13,7 @@ public class SystemMain07 {
 		//TODO ここから実装する
 		ConsoleReader consoleReader = new ConsoleReader();
 		try {
-			consoleReader.inputNumber();
+			limit = consoleReader.inputNumber();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (NumberFormatException e) {
@@ -25,18 +25,24 @@ public class SystemMain07 {
 		int sum = 0;
 		//TODO ここから実装する
 		numberList.addFromOneTo(limit);
-		numberList.getNumbers();
-		System.out.println();
+		System.out.println(numberList.getNumbers());
+
+		sum = numberList.calcSumOfList();
 
 		System.out.println("1から" + limit + "までの合計は" + sum + "です。");
 
 		System.out.println("****************");
 		System.out.println("Listの各要素を2倍します");
 		//TODO ここから実装する
+		numberList.doubleListEachValue();
+		System.out.println(numberList.getNumbers());
 
 		System.out.println("****************");
 		System.out.println("Listの前半分のインデックスの要素を削除します");
 		//TODO ここから実装する
+		numberList.removeIndexOfFirstHalf();
+
+		System.out.println(numberList.getNumbers());
 
 	}
 
